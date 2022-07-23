@@ -25,7 +25,7 @@
         <nav>
           <!-- Nawigacja do innych sekcji -->
           <ul class="navigation">
-            <li><a href="index.html">Agencja</a></li>
+            <li><a class="active" href="index.html">Agencja</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
@@ -58,7 +58,7 @@
       <div class="title-background">
         <div class="container page-title">
           <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-          <button type="button" class="order">Zamów usługę</button>
+          <button type="button" class="order" data-modal-open>Zamów usługę</button>
         </div>
       </div>
     </section>
@@ -127,16 +127,24 @@
         <h2 class="what-we-do">Czym się zajmujemy?</h2>
         <ul class="images">
           <li>
+            <div class="what-we-do-picture">
             <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox1sq.jpg?raw=true"
               alt="Pisanie na klawiaturze" width="370" height="294" />
+            <div class="what-we-do-description"><p>aplikacje komputerowe</p></div>
+            </div>
           </li>
           <li>
+            <div class="what-we-do-picture">
             <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox2sq.jpg?raw=true"
               alt="Strony na telefon i komputer" width="370" height="294" />
+              <div class="what-we-do-description"><p>aplikacje mobilne</p></div>
+            </div>
           </li>
-          <li>
+          <li><div class="what-we-do-picture">
             <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox3sq.jpg?raw=true"
               alt="Kolorowe tablety" width="370" height="294" />
+              <div class="what-we-do-description"><p>rozwiązania graficzne</p></div>
+            </div>
           </li>
         </ul>
       </div>
@@ -378,6 +386,15 @@
       </div>
     </section>
   </footer>
+
+  <!-- okno modalne -->
+  <div class="modal-container is-hidden" id="modal-container" data-modal>
+    <div class="modal-background">
+        <div class="modal">
+            <button type="button" class="button-close" data-modal-close>X</button>
+        </div>
+    </div>
+</div>
   <script src="./js/modal.js"></script>
 </body>
 
