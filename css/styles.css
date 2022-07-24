@@ -367,7 +367,7 @@ h3 {
   border: 1px solid #afb1bb;
   border-radius: 8px;
   padding: 15px 30px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon * {
   fill: #afb1b8;
