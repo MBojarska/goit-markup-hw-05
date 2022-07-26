@@ -46,11 +46,11 @@ body {
 }
 .lorem {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 .lorem > li {
   width: 270px;
-  padding-right: 30px;
 }
 .lorem h3 {
   padding-top: 30px;
